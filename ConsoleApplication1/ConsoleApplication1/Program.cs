@@ -11,6 +11,11 @@ namespace ConsoleApplication1
         static void Main(string[] args)
         {
             Console.WriteLine("GIT HUB EST UNE MERDE");
+
+            for (int i = 0; i < 25; i++)
+            {
+                Console.WriteLine(i*i);
+            }
         }
     }
 }
