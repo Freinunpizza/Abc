@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Text.RegularExpressions;
 
 namespace ConsoleApplication1
 {
@@ -10,12 +11,23 @@ namespace ConsoleApplication1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("GIT HUB EST UNE MERDE");
+           
 
-            for (int i = 0; i < 25; i++)
+           Console.WriteLine(IsPrime(18));
+        }
+
+        public static bool IsPrime(int n)
+        {
+
+            for (int i = 2; i < n; i++)
             {
-                Console.WriteLine(i*i);
+                if (n % i == 0 )
+                {
+                    return false;
+                }
             }
+
+            return true;
         }
     }
 }
